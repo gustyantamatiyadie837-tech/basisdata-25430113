@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Halaman-1" id="U7lYQpMrQiOKi5LnUbgU">
+    <mxGraphModel dx="1229" dy="716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="petugas" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" value="petugas" vertex="1">
+          <mxGeometry height="150" width="180" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p_1" parent="petugas" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="PK | id_petugas" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p_2" parent="petugas" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | nama_petugas" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p_3" parent="petugas" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | jabatan" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_4" parent="petugas" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | no_telepon" vertex="1">
+          <mxGeometry height="30" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" value="anggota" vertex="1">
+          <mxGeometry height="180" width="180" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_1" parent="anggota" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="PK | id_anggota" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2" parent="anggota" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | nim_anggota" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_3" parent="anggota" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | nama_anggota" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a_4" parent="anggota" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | no_telepon" vertex="1">
+          <mxGeometry height="30" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a_5" parent="anggota" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | email" vertex="1">
+          <mxGeometry height="30" width="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" value="peminjaman" vertex="1">
+          <mxGeometry height="180" width="180" x="360" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_1" parent="peminjaman" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="PK | id_peminjaman" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_2" parent="peminjaman" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="FK | id_anggota" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_3" parent="peminjaman" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="FK | id_petugas" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_4" parent="peminjaman" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | tgl_pinjam" vertex="1">
+          <mxGeometry height="30" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pm_5" parent="peminjaman" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | tgl_tenggat" vertex="1">
+          <mxGeometry height="30" width="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" value="detail_peminjaman" vertex="1">
+          <mxGeometry height="150" width="190" x="660" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="d_1" parent="detail" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="PK,FK | id_peminjaman" vertex="1">
+          <mxGeometry height="30" width="190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d_2" parent="detail" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="PK,FK | id_buku" vertex="1">
+          <mxGeometry height="30" width="190" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d_3" parent="detail" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="         | jumlah" vertex="1">
+          <mxGeometry height="30" width="190" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d_4" parent="detail" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="         | kondisi_buku" vertex="1">
+          <mxGeometry height="30" width="190" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="buku" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontStyle=1;align=center;resizeLast=1;" value="buku" vertex="1">
+          <mxGeometry height="240" width="180" x="960" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b_1" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="PK | id_buku" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b_2" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | kode_buku" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b_3" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | judul_buku" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b_4" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | pengarang" vertex="1">
+          <mxGeometry height="30" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b_5" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | penerbit" vertex="1">
+          <mxGeometry height="30" width="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="b_6" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | tahun_terbit" vertex="1">
+          <mxGeometry height="30" width="180" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="b_7" parent="buku" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[];strokeColor=inherit;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" value="     | stok" vertex="1">
+          <mxGeometry height="30" width="180" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_1" edge="1" parent="1" source="petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startSize=8;endArrow=ERzeroToMany;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pm_3" value="melayani">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_2" edge="1" parent="1" source="anggota" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startSize=8;endArrow=ERzeroToMany;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pm_2" value="melakukan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_3" edge="1" parent="1" source="peminjaman" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startSize=8;endArrow=ERoneToMany;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="d_1" value="berisi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_4" edge="1" parent="1" source="buku" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startSize=8;endArrow=ERzeroToMany;endSize=8;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="d_2" value="tercantum">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
