@@ -54,7 +54,7 @@ Dokumen utama yang dianalisis adalah **Nota Penjualan Kopma**, yang mencakup:
 | Elemen Data | Arti / Deskripsi | Contoh Nilai | Aturan | Penanggung Jawab |
 |---|---|---|---|---|
 | `no_anggota` | Nomor anggota koperasi | A-0457 | Unik, format A-4 digit | Ketua |
-| `nim_anggota` | NIM anggota | 25430113 | Unik, 10 digit | Ketua |
+| `nim_anggota` | NIM anggota | 25430113 | Unik, 8 digit | Ketua |
 | `no_hp_anggota` | Nomor HP anggota | 0812xxxx | Data pribadi, akses terbatas | Ketua |
 | `no_nota_penjualan` | Nomor nota penjualan | PJ-2609-0142 | Unik per nota | Kasir |
 | `harga_satuan_detail_penjualan` | Harga jual saat transaksi | 4000 | Bilangan bulat $\ge 0$ (Rupiah) | Kasir |

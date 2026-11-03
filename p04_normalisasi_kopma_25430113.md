@@ -98,5 +98,6 @@ Skema akhirnya terdiri dari 8 tabel. Hasil pemeriksaan saya menunjukkan tidak ad
   UPDATE penjualan 
   SET nama_anggota = 'Budi Santoso Gunawan' 
   WHERE id_penjualan = 1;
+  ```
 
-  Akibatnya, timbul inkonsistensi data di mana baris id_penjualan = 1 bernama Budi Santoso Gunawan, sementara baris id_penjualan = 2 tetap Budi Santoso. Solusi 3NF mengharuskan nama_anggota dipisah ke tabel anggota.
+  Akibatnya, timbul inkonsistensi data di mana baris `id_penjualan = 1` bernama Budi Santoso Gunawan, sementara baris `id_penjualan = 2` tetap Budi Santoso. Solusi 3NF mengharuskan `nama_anggota` dipisah ke tabel `anggota`.

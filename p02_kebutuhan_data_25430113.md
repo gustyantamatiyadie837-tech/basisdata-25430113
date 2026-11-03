@@ -86,7 +86,7 @@ Berikut adalah kamus data awal yang merinci elemen-elemen penting dalam sistem P
 |---|---|---|---|---|---|
 | 1 | `id_anggota` | Pengenal unik internal anggota | 1 | Bilangan bulat auto-increment | Kepala Perpustakaan |
 | 2 | `no_anggota` | Nomor kartu anggota | A-0123 | Unik, format A-4 digit | Kepala Perpustakaan |
-| 3 | `nim_anggota` | Nomor Induk Mahasiswa | 25430113 | Unik, 10 digit angka | Kepala Perpustakaan |
+| 3 | `nim_anggota` | Nomor Induk Mahasiswa | 25430113 | Unik, 8 digit angka | Kepala Perpustakaan |
 | 4 | `nama_anggota` | Nama lengkap anggota | Budi Santoso | Huruf dan spasi, NOT NULL | Kepala Perpustakaan |
 | 5 | `prodi_anggota` | Program studi anggota | Ilmu Komputer | Sesuai daftar prodi resmi | Kepala Perpustakaan |
 | 6 | `no_hp_anggota` | Nomor telepon / WhatsApp | 081234567890 | Data pribadi, akses terbatas | Kepala Perpustakaan |
@@ -108,14 +108,21 @@ Berikut adalah kamus data awal yang merinci elemen-elemen penting dalam sistem P
 | 22 | `qty_pinjam` | Jumlah eksemplar buku dipinjam | 2 | Bilangan bulat $> 0$ | Pustakawan |
 | 23 | `tgl_kembali_aktual` | Tanggal riil buku dikembalikan | 2026-10-15 | Format DATE | Pustakawan |
 | 24 | `jumlah_denda` | Nominal denda keterlambatan | 5000 | Bilangan $\ge 0$ (Rupiah) | Pustakawan |
+| 25 | `id_pengembalian` | Pengenal unik transaksi pengembalian | 55 | Bilangan bulat auto-increment | Pustakawan |
+| 26 | `tahun_terbit_buku` | Tahun terbit buku | 2020 | Bilangan bulat 4 digit, nullable | Pustakawan |
+| 27 | `kategori_buku` | Kategori / klasifikasi buku | Teknologi Informasi | Teks, NOT NULL | Pustakawan |
+| 28 | `kondisi_buku_pinjam` | Kondisi fisik buku saat dipinjam | baik | ENUM ('baik', 'rusak') (AB-08) | Pustakawan |
+| 29 | `kondisi_buku_kembali` | Kondisi fisik buku saat dikembalikan | baik | ENUM ('baik', 'rusak', 'hilang'), NULL sebelum dikembalikan (AB-08) | Pustakawan |
+| 30 | `status_peminjaman` | Status transaksi peminjaman | dipinjam | ENUM ('dipinjam', 'dikembalikan') | Pustakawan |
+| 31 | `status_denda` | Status pembayaran denda | belum_lunas | ENUM ('tidak_ada', 'belum_lunas', 'lunas') | Pustakawan |
 
 ## 9. Kebutuhan non-fungsional data
 * **Perhitungan Parameter $P$:**  $P = (13 \pmod 9) + 1 = 4 + 1 = 5$
-* **Volume Transaksi:** Perkiraan volume transaksi harian di Perpustakaan Cakrawala GT adalah $40 + (5 \times P) = 65$ transaksi per hari[cite: 51].
-* **Batas Maksimal Peminjaman:** Batas maksimal buku yang dapat dipinjam dalam satu transaksi adalah $P + 2 = 7$ buku[cite: 51].
-* **Besaran Denda:** Besaran denda harian keterlambatan pengembalian buku ditetapkan sebesar $P$ ribu rupiah, yaitu Rp5.000 per hari[cite: 51].
+* **Volume Transaksi:** Perkiraan volume transaksi harian di Perpustakaan Cakrawala GT adalah $40 + (5 \times P) = 65$ transaksi per hari.
+* **Batas Maksimal Peminjaman:** Batas maksimal buku yang dapat dipinjam dalam satu transaksi adalah $P + 2 = 7$ buku.
+* **Besaran Denda:** Besaran denda harian keterlambatan pengembalian buku ditetapkan sebesar $P$ ribu rupiah, yaitu Rp5.000 per hari.
 * **Retensi Data:** Seluruh catatan transaksi peminjaman dan pengembalian perpustakaan wajib disimpan minimal selama 5 tahun untuk keperluan audit.
-* **Privasi dan Keamanan Data:** Nomor telepon dan data pribadi anggota dikategorikan sebagai informasi privat yang hanya dapat diakses oleh Kepala Perpustakaan atau petugas yang berwenang, sejalan dengan prinsip pelindungan data pribadi[cite: 50].
+* **Privasi dan Keamanan Data:** Nomor telepon dan data pribadi anggota dikategorikan sebagai informasi privat yang hanya dapat diakses oleh Kepala Perpustakaan atau petugas yang berwenang, sejalan dengan prinsip pelindungan data pribadi.
 
 ## 10. Isu kualitas data yang diantisipasi
 * **Duplikasi Data Anggota:** Potensi pendaftaran berulang menggunakan NIM yang sama.
